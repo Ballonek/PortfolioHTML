@@ -1,0 +1,445 @@
+@font-face {
+  font-family: 'Doppio One';
+  src: url("../fonts/DoppioOne-Regular.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+* h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  font-family: 'Doppio One';
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))) !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) !important;
+  height: 3rem;
+}
+
+.navbar-flex {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar-flex ul li a {
+  color: #FCFCFC !important;
+}
+
+.navbar-flex ul li a:hover {
+  color: #690f0f !important;
+}
+
+.navbar-flex ul .nav-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar h1 a {
+  font-size: 1.5rem;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/topbg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/topbg.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.top {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fcfcfc;
+  font-family: 'Doppio One';
+}
+
+.top-heading {
+  width: 450px;
+}
+
+.top-heading h2 {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.about {
+  background-color: whitesmoke;
+  min-height: 700px;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.6rem 0;
+  text-align: center;
+}
+
+.about-content {
+  margin-bottom: 2rem;
+}
+
+.about-cards {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.about-cards .card {
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.31);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.31);
+  margin: 5px;
+  padding: 1.4rem 0.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-cards .card-icon {
+  height: 70px;
+  width: 70px;
+  background: #690f0f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+}
+
+.about-cards .card-icon i {
+  font-size: 2rem;
+  color: #FCFCFC;
+}
+
+.about-cards .card-title {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-family: 'Doppio One';
+}
+
+.about-cards .card-text {
+  font-size: 0.9rem;
+}
+
+.portfolio {
+  background: whitesmoke;
+}
+
+.portfolio h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.portfolio-container {
+  padding: 2rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.portfolio-item {
+  color: white;
+  background-size: 100% 100%;
+  background-position: center center;
+  -webkit-animation: shrink 10s infinite ease;
+          animation: shrink 10s infinite ease;
+  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.31);
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.31);
+  position: relative;
+  padding: 30px;
+  font-family: 'Doppio One';
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes shrink {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 150% 150%;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 150% 150%;
+  }
+}
+
+.portfolio-item-content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-item-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio-item-content .links {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact {
+  min-height: 60vh;
+  padding: 3.6rem 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8))), url("../img/contactbg.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/contactbg.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #FCFCFC;
+}
+
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container {
+  margin-top: 2rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-content {
+  padding-left: 50px;
+}
+
+.contact-content .address {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-photo {
+  padding: 10px;
+  position: relative;
+  min-height: 400px;
+}
+
+.contact-photo .cp {
+  width: 11rem;
+  height: 11rem;
+  position: absolute;
+}
+
+.contact-photo .cp-1 {
+  background-color: #141414;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+.contact-photo .cp-2 {
+  background-color: #343434;
+  z-index: 11;
+  top: 10%;
+  left: 10%;
+}
+
+.contact-photo .cp-3 {
+  background-color: #515151;
+  z-index: 12;
+  top: 20%;
+  left: 20%;
+}
+
+.contact-photo .cp-4 {
+  z-index: 13;
+  top: 30%;
+  left: 30%;
+}
+
+.contact-photo .cp img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  padding: 2rem 0;
+  background: #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 200px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .social i {
+  color: #FCFCFC;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+footer .social i:hover {
+  color: #690f0f;
+}
+
+@media only screen and (max-width: 991px) {
+  * {
+    font-size: 17px;
+  }
+  .navbar {
+    height: 4rem;
+  }
+  .navbar-nav {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 20px;
+  }
+  .navbar #toggle {
+    margin-right: 1rem;
+  }
+  .navbar #toggle span {
+    color: #FCFCFC !important;
+  }
+  .navbar .bg {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    position: relative;
+    top: -0.1rem;
+  }
+  .top {
+    top: -4rem;
+    height: 70vh;
+  }
+  .top-heading {
+    width: 350px;
+  }
+  .top-heading h2 {
+    font-size: 35px;
+  }
+  .about-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */
