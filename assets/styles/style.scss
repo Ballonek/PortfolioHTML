@@ -29,6 +29,7 @@
             li {
                 a { 
                     color: #FCFCFC !important;
+                    transition: all 200ms ease-in;
                     &:hover {
                         color: #690f0f !important;
                     }
@@ -147,18 +148,23 @@ header {
 
     &-item {
         color: white;
-        background-size: 100% 100%;
+        //background-size: 100% 100%;
         background-position: center center;
-        animation: shrink 10s infinite ease;
+        animation: shrink 20s infinite linear;
 
         @keyframes shrink {
             0% {
-              background-size: 100% 100%;
+                background-size: 100% 100%;
+            }
+            50% {
+                background-size: 150% 150%;
             }
             100% {
-              background-size: 150% 150%;
+                background-size: 100% 100%;
             }
-          }
+          }        
+
+
         -webkit-box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.31);
         -moz-box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.31);
         box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.31);
