@@ -189,7 +189,7 @@ header {
                     color: white;
                     transition: all 300ms ease-in;
                     &:hover {
-                        color: #690f0f;
+                        color: lighten($color: #690f0f, $amount: 10);
                         text-decoration: none;
                     }
                 }
