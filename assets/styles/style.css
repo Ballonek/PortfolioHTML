@@ -254,6 +254,17 @@ header {
           justify-content: flex-end;
 }
 
+.portfolio-item-content .links a {
+  color: white;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.portfolio-item-content .links a:hover {
+  color: #690f0f;
+  text-decoration: none;
+}
+
 .contact {
   min-height: 60vh;
   padding: 3.6rem 0;

@@ -185,6 +185,14 @@ header {
                 height: 100%;
                 display: flex;
                 justify-content: flex-end;
+                a{
+                    color: white;
+                    transition: all 300ms ease-in;
+                    &:hover {
+                        color: #690f0f;
+                        text-decoration: none;
+                    }
+                }
             }
 
         }
