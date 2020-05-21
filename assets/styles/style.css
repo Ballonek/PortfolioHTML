@@ -35,6 +35,8 @@
 
 .navbar-flex ul li a {
   color: #FCFCFC !important;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 .navbar-flex ul li a:hover {
@@ -184,10 +186,9 @@ header {
 
 .portfolio-item {
   color: white;
-  background-size: 100% 100%;
   background-position: center center;
-  -webkit-animation: shrink 10s infinite ease;
-          animation: shrink 10s infinite ease;
+  -webkit-animation: shrink 20s infinite linear;
+          animation: shrink 20s infinite linear;
   -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.31);
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.31);
   position: relative;
@@ -201,8 +202,11 @@ header {
   0% {
     background-size: 100% 100%;
   }
-  100% {
+  50% {
     background-size: 150% 150%;
+  }
+  100% {
+    background-size: 100% 100%;
   }
 }
 
@@ -210,8 +214,11 @@ header {
   0% {
     background-size: 100% 100%;
   }
-  100% {
+  50% {
     background-size: 150% 150%;
+  }
+  100% {
+    background-size: 100% 100%;
   }
 }
 
